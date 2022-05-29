@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by bs7935</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>CryptoGap</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="AutoCompleteStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+    
+  </head>
+  <body onload = "getCoinList()">
+  <div class="container">
+  <div id ="header">
+    <div id = "logoHeader">
+        <h3>Crypto Baller</h3>
+    </div>
+  </div>
+  
+
+  <div id ="nav">
+    <div id = "logo">
+      <form autocomplete="off" action="/action_page.php">
+        <div class="autocomplete" style="width:300px;">
+          <input id="myInput" type="text" name="coinSearch" placeholder="Search Coins">
+        </div>          
+      </form>
+         <img id = "coinLogo" src="https://www.ethereum.org/images/logos/ETHEREUM-ICON_Black_small.png" alt="logo" height= "200px" width="200px">
+         <h1 id = "coinNameText">Ethereum</h1>
+         <div>
+          <input type ="number" id="buySellInput" placeholder="How Many?"><h5 id="inputLabel"></h5></div>
+        </div>
+
+
+      <div id = "buySell">
+        <button type ="button" id="buyButton" class="btn btn-dark" onclick = "buyCoin()">Buy Ethereum</button>
+        <button type ="button" id="sellButton" class="btn btn-dark" onclick = "sellCoin()">Sell Ethereum</button>
+      </div>
+    <div id = "info">
+        <p id="priceText"><strong>Current Price:  $145.63</strong></p>
+        <p id="volumeText">Daily Volume:  $1,342,988</p>
+        <p id="dailyHighText">Daily High:  $149.63</p>
+        <p id="dailyLowText">Daily Low:  $139.11</p>
+    </div>
+  </div>
+  <main>
+    <div id ="mainContainer">
+      <div id="holdingDiv">
+        <h3 id ="holdingsLabel" class ="holdingsHeader">Holdings</h3>
+          <h1 id="holdingsNum"></h1>
+        <h3 id ="coinValueLabel" class ="holdingsHeader">Dollar Value</h3>
+          <h1 id="coinValueNum"></h1>
+          <h3 id ="spentLabel" class ="holdingsHeader">Cost</h3>
+          <h1 id="spentNum"></h1>
+           <h3 id ="profitLabel" class ="holdingsHeader">Profit/Loss</h3>
+          <h1 id="profitNum"></h1>
+
+      </div>
+      <div id="newsDiv"></div>
+      <div id="chartDiv">
+          <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div id="tradingview_cac80"></div>
+  
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+
+</div>
+<!-- TradingView Widget END -->
+    </div>
+
+  </main> 
+  <footer>FOOTER</footer>
+  </div>
+  
+
+  <script type="text/javascript" src="node_modules\cryptocompare\index.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  </body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
